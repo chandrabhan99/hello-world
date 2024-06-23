@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from app.engine.demand_search import search_similar_demands
 from app.engine.resume_search import get_genus_hist_res
 from app.helpers.document_parser_utils import get_cv_and_analyze
