@@ -6,13 +6,13 @@ import asyncio
 
 from helpers.prompts import get_resume_information, get_resume_skills_prompt, get_resume_summary_prompt
 
-api-key = os.environ["api-key"]
+api_key = os.environ["api-key"]
 azure_openai_endpoint = os.environ["azure-openai-endpoint"]
-openai-model-name = os.environ["openai-model-name"]
-openai-embedding-model-name=os.environ["openai-embedding-model-name"]
+openai_model_name = os.environ["openai-model-name"]
+openai_embedding_model_name=os.environ["openai-embedding-model-name"]
 
 openai_client = AzureOpenAI(
-  api-key = api-key,
+  api_key = api_key,
   api_version = "2024-02-01",
   azure_endpoint = azure_openai_endpoint
 )
@@ -20,14 +20,14 @@ openai_client = AzureOpenAI(
 def get_embeddings(text):
   response = openai_client.embeddings.create(
     input=text,
-    model=openai-embedding-model-name
+    model=openai_embedding_model_name
     )
   return response.data[0].embedding
 
 
 async def make_openai_request(prompt):
     r = openai_client.completions.create(
-        model=openai-model-name,
+        model=openai_model_name,
         prompt=prompt,
         temperature=0,
         max_tokens=2048,
