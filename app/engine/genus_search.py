@@ -1,5 +1,5 @@
-from helpers.elastic_search_utils import get_search_client
-from helpers.genus_utils import get_genus_info, get_suitable_genus
+from app.helpers.elastic_search_utils import get_search_client
+from app.helpers.genus_utils import get_genus_info, get_suitable_genus
 import re
 
 def search_similar_genus(analysis, genus0_l):

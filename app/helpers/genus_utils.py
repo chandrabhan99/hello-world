@@ -1,7 +1,7 @@
 import pandas as pd
 from bs4 import BeautifulSoup
 import io
-from helpers.blob_storage_utils import get_blob
+from app.helpers.blob_storage_utils import get_blob
 
 blob_content = get_blob("genus-data", "genus.csv")
 ge = pd.read_csv(io.BytesIO(blob_content))
