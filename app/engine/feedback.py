@@ -1,4 +1,4 @@
-from app.helpers.elastic_search_utils import get_search_client
+from helpers.elastic_search_utils import get_search_client
 from datetime import datetime, timezone
 
 def post(cv_key, feedback):

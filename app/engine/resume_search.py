@@ -1,5 +1,5 @@
 import logging
-from app.helpers.elastic_search_utils import get_search_client
+from helpers.elastic_search_utils import get_search_client
 
 def get_genus_hist_res(analysis):
   resp = search_similar_resumes(analysis)

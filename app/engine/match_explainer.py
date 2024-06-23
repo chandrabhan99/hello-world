@@ -1,5 +1,5 @@
 import re
-from app.helpers.llm_utils import match_resume, execute_prompts
+from helpers.llm_utils import match_resume, execute_prompts
 
 def get_match_reason(summary_1, skills_1, summaries, skills):
     json_responses = []

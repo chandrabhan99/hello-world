@@ -1,6 +1,6 @@
-from app.helpers.elastic_search_utils import get_search_client
-from app.helpers.genus_utils import get_genus_info, get_suitable_genus
-from app.helpers.geolocator_utils import get_lon_lat, get_distance
+from helpers.elastic_search_utils import get_search_client
+from helpers.genus_utils import get_genus_info, get_suitable_genus
+from helpers.geolocator_utils import get_lon_lat, get_distance
 import re
 import math
 

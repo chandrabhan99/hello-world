@@ -1,11 +1,10 @@
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-from app.engine.demand_search import search_similar_demands
-from app.engine.resume_search import get_genus_hist_res
-from app.helpers.document_parser_utils import get_cv_and_analyze
-from app.helpers.llm_utils import get_embeddings
-from app.engine.match_explainer import get_match_reason
+from engine.demand_search import search_similar_demands
+from engine.resume_search import get_genus_hist_res
+from helpers.document_parser_utils import get_cv_and_analyze
+from helpers.llm_utils import get_embeddings
+from engine.match_explainer import get_match_reason
 
 def get_recommendations(cv_key, location):
     extracted_info = get_cv_and_analyze(cv_key)

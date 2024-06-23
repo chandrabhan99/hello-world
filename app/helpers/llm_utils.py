@@ -4,7 +4,7 @@ from openai import AzureOpenAI
 import aiohttp
 import asyncio
 
-from app.helpers.prompts import get_resume_information, get_resume_skills_prompt, get_resume_summary_prompt
+from helpers.prompts import get_resume_information, get_resume_skills_prompt, get_resume_summary_prompt
 
 api-key = os.environ["api-key"]
 azure_openai_endpoint = os.environ["azure-openai-endpoint"]

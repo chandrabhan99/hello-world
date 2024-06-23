@@ -2,8 +2,8 @@ import io
 import PyPDF2
 import docx2txt
 import logging
-from app.helpers.blob_storage_utils import get_blob
-from app.helpers.llm_utils import extract_resume_key_details
+from helpers.blob_storage_utils import get_blob
+from helpers.llm_utils import extract_resume_key_details
 import os
 
 is_debug = ("debug" in os.environ) and (os.environ["debug"] == "True")

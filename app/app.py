@@ -2,10 +2,10 @@ from flask import Flask, request, jsonify
 
 import logging
 import json
-from app.helpers.blob_storage_utils import get_new_sas
-from app.engine.job_navigator import get_recommendations
-from app.engine import feedback
-from app.helpers.app_utils import get_key
+from helpers.blob_storage_utils import get_new_sas
+from engine.job_navigator import get_recommendations
+from engine import feedback
+from helpers.app_utils import get_key
 
 app = Flask(__name__)
 
